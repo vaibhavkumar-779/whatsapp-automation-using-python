@@ -8,8 +8,8 @@ driver = webdriver.Chrome()
 
 driver.get("https://web.whatsapp.com/")
 wait = WebDriverWait(driver,600)
-target = '"golu bhaiya"'#enter your contact/friend name here
-string= "Python Ala re baba PYthon!! maine ye code kia hai"#The message you need to send to the contact in whatsapp
+target = '"pranjal sharma"'#enter your contact/friend name here
+string= "Python Ala re baba PYthon!"#The message you need to send to the contact in whatsapp
 #to locate element under span tab
 x_arg='//span[contains(@title,'+ target +')]'
 target=wait.until(EC.presence_of_element_loctaed((By.XPATH,x_arg)))
